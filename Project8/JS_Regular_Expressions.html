@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Javascript Regular Expressions</title>
+	<script>
+	function reg_expr(){
+		let text="I am studying in Amrita";
+		let n=text.search(/Amrita/i);
+		document.getElementById("p1").innerHTML="Amrita is in "+n+"th position";
+		}
+	function reg_expr1(){
+		let text=document.getElementById("demo1").innerHTML;
+		document.getElementById("demo1").innerHTML=text.replace(/work/i,"study");
+		}
+	</script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			}
+			
+		h1 a{
+			text-decoration:none;
+			color: white;
+			}
+		.cont1{
+			margin-left:300px;
+			margin-right:300px;
+			background-color:#FADACD;
+			border-radius:10px;
+			font-size: 25px;
+			}
+			a:hover{
+			color: #d00846;
+			background-color: white;
+			text-decoration: none;
+		}
+			.btn{
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration:none;
+  float: right;
+}
+
+.btn:hover{
+  background-color: #D00846;
+  color:aliceblue
+}
+	</style>
+</head>
+<body bgcolor="#D00846">
+	<p style="float:left; color:whitesmoke;padding:10px 10px 0px 0px">Rittin Mithra C<br>CH.EN.U4CYS21067</p><br>
+            <a href="C:\rittin\UID\PROJECT DISPLAY\index.html"><button  class="btn" type="submit">PROJECT SECTION</button></a>
+	<h1 align="center" style="font-family:Times New Roman;margin-top:20px">Javascript <a href="JS_Mouse_Events.html">Mouse Events</a> and <u>Regular Expressions</u></h1><br><br>
+	<div class="cont1"><h3 align="center">Search Method</h3><br>
+	<p style="margin-left:100px" id="demo">Sentence : I am Studying in Amrita School of computing"</p><br>
+	<button style="margin-left:100px;"  onclick="reg_expr()">Click</button><br><br>
+	<p style="margin-left:100px" id="p1"></p><br><br></div>
+	<br><br><hr><br><br>
+	<div class="cont1"><h3 align="center">Replace Method</h3><br>
+	<p style="margin-left:100px" id="demo1">I am Studying in Amrita School of computing</p><br>
+	<button style="margin-left:100px;"  onclick="reg_expr1()">Click</button><br><br>
+	</div>
+</body>
+</html>

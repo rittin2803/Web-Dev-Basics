@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CyberNation'22</title>
+    <script src="formvalidation.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(amrita4.jpeg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+
+        .regform {
+            width: 700px;
+            background-color: rgb(0, 0, 0, 0.6);
+            margin: auto;
+            color: whitesmoke;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+        .main {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+            color: lightgrey;
+        }
+
+        form {
+            padding: 50px;
+        }
+
+        .btn{
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration:none;
+        }
+
+.btn:hover{
+  background-color: #D00846;
+  color:aliceblue
+}
+
+    </style>
+</head>
+
+<body>
+    <p style="float:right; color:whitesmoke;padding:10px 10px 0px 0px">Rittin Mithra C<br>CH.EN.U4CYS21067</p><br>
+	  <a href="https://www.amrita.edu/"><img src="imag.png" height="80px" style="float:left;padding:10px 0px 0px 10px"></a><br><br>
+      <a href="C:\rittin\UID\PROJECT DISPLAY\index.html"><button style="float: right;" class="btn" type="submit">PROJECT SECTION</button></a>
+    </div>
+    <div class="regform">
+        <h1 style="color:lightcyan"><b>CYBER NATION 2K22</b></h1>
+    </div>
+    <div class="main">
+        <form action="#test.php" method="post" name="RegForm" onsubmit="return checkform()">
+        <center>
+        <table>
+            <tr>
+				<td><label for="Name">Name : </label></td>
+				<td><input type="textbox" name="Name" placeholder="Enter your Name" id="Name"></td>
+			<tr>
+				<td><label for="EMail">E-mail : </label></td>
+				<td><input type="textbox" name="EMail" placeholder="eg:xxxx@gmail.com" id="EMail"></td>
+			</tr>
+			<tr>
+				<td><label for="Password">Password : </label></td>
+				<td><input type="password" name="Password" placeholder="password" id="Password"></td>
+			</tr>
+			<tr>
+				<td><label for="phone">Phone :</label></td>
+				<td><input type="textbox" name="Ph_Number" placeholder="eg:9363263xxx" id="phone"></td>
+			</tr>
+			<tr>
+				<td><label for="dob">Date of Birth :</label></td>
+				<td><input type="date" name="DOB" id="dob" required></td>
+			</tr>
+			<tr>
+				<td>Gender :</td>
+				<td><input type="radio" name="gender" value="Male"><label for="male"> Male</label>
+					<input type="radio" name="gender" value="Female"><label for="female"> Female</label>
+					<input type="radio" name="gender" value="Other"><label for="other"> Other</label></td>
+				
+			</tr>
+			<tr>
+				<td><label for="profession">Profession :</label></td>
+				<td><select name="profession" id="profession">
+						<option value="student" selected>Student</option>
+						<option value="Researcher">Researcher/Scientist</option>
+						<option value="Teacher">Teacher</option>
+						<option value="IT/Software">IT/Software Employee</option>
+						<option value="others">Others</option></td>
+			</tr>
+			<tr>
+				<td><label for="org">Organization/Institution :</label></td>
+				<td><input type="textbox" name="organization" placeholder="College Name" id="org"></td>
+			</tr>
+            
+    <br>  
+    </table>
+    Country :  
+    </label>   
+    <select>  
+    <option value="Country">Country</option>  
+    <option value="Afghanistan">Afghanistan</option>   
+    <option value="India" selected>India</option>  
+    <option value="Europe">Europe</option>  
+    </select>  
+    <br><br> 
+    <b><label for="up">ID Proof:</b></label><input type="file" name="upload" id="up"/><br>
+    <label>
+        <br>
+           
+        <pre>   
+    <h3> SELECT WORKSHOP: </h3><input type="checkbox" name="AWS Security, Identity, and Compliance" value="AWS Security, Identity, and Compliance">AWS Security, Identity, and Compliance<br> 
+    <input type="checkbox" name="DIGITAL AWS Security Fundamentals" value="DIGITAL AWS Security Fundamentals"> DIGITAL AWS Security Fundamentals
+    <br><input type="checkbox" name="Cloud Security" value="Cloud Security"> Cloud Security
+    <br> <input type="checkbox" name="Ethical Hacking" value="Ethical Hacking"> Ethical Hacking<br>
+    <h3> SELECT WORKSHOP DATES AND SLOTES</h3></label><br>  
+    <input type="radio" name="02/10/22-FN"/>02/10/22-FN<br>  
+    <input type="radio" name="02/10/22-AN"/>02/10/22-AN<br>  
+    <input type="radio" name="03/10/22-FN"/>03/10/22-FN<br>
+    <input type="radio" name="03/10/22-AN"/>03/10/22-AN 
+    <br> 
+    <button  class="btn" type="submit">Register</button>
+    </center>
+    </pre>
+    </form> 
+    </div>
+</body>
+
+</html>

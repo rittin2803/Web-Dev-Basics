@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Javascript Mouse Events</title>
+	<script src="Mouseevent.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			color: whitesmoke;
+			}
+		h1 a{
+			text-decoration:none;
+			}
+		a:hover{
+			color: #d00846;
+			background-color: white;
+			text-decoration: none;
+		}
+		.btn{
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration:none;
+  float: right;
+  color: gray;
+}
+
+.btn:hover{
+  background-color: #D00846;
+  color:black;
+}
+	</style>
+</head>
+<body bgcolor="#D00846">
+	<p style="float:left; color:whitesmoke;padding:10px 10px 0px 0px">Rittin Mithra C<br>CH.EN.U4CYS21067</p>
+            <a href="C:\rittin\UID\PROJECT DISPLAY\index.html"><button  class="btn" type="submit">PROJECT SECTION</button></a>
+	<h1 align="center" style="font-family:Times New Roman;margin-top:20px">Javascript <u>Mouse Events</u> and <a href="JS_Regular_Expressions.html">Regular Expressions</a></h1><br><br>
+	<center>
+	<p style="margin-left:50px;">Example for onclick event
+	<button style="background-color:white;padding:5px;border-radius:5px;margin-left:20px;color:black;" onclick="clickexample()" id="mouseclick">Click Me</button></p><br><br>
+	<p style="margin-left:50px;">Example for onmouseup and onmousedown event
+	<button style="background-color:white;padding:5px;border-radius:5px;margin-left:20px;color:black;" onmouseup="mouseup()" onmousedown="mousedown()" id="mousehold">Hold Me</button></p><br><br>
+	<p style="margin-left:50px;">Example for dbclick event
+	<button style="background-color:white;padding:5px;border-radius:5px;margin-left:20px;color:black;" ondblclick="dbclickexample()" id="mousedouble">Doubleclick Me</button></p><br>
+	<p style="margin-left:100px;" id="dbclickex"></p>
+	<h2>Mouse over and out</h2>
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" loop muted height="400px"
+                width="600px">
+                <source src="promo.mp4" type="video/mp4">
+                </source>
+    </video>
+</center>
+</body>
+</html>

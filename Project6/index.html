@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div style="font-size: 15px;color:white"><p>Rittin Mithra C<br>CH.EN.U4CYS21067</p>
+    <a href="C:\rittin\UID\PROJECT DISPLAY\index.html"><button  class="btn" type="submit">PROJECT SECTION</button></a>
+ </button>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mx-auto main">
+        <h1 class="text-center">Body Mass Index</h1>
+        <p class="text-center space">Calculate your BMI.</p>
+        <form name="form" class="f">
+            <div class="form-group row">
+              <label for="Height" class="col-sm-2 col-form-label">Height</label>
+              <div class="col-sm-10">
+                <input type="text" class="input-field form-control" id="Height" placeholder="Type here in cm." name="displayResult" />
+              </div>
+            </div>
+            <div class="form-group row space">
+                <label for="Weight" class="col-sm-2 col-form-label">Weight</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="Weight" placeholder="Type here in kg." name="displayResult1" />
+                </div>
+              </div>
+                <div class="display">
+                </div>
+                  <div class="buttons">
+                    <div class="row">
+                    <input type="button" name="b7" value="7" onclick="calcNumbers(b7.value)">
+                      <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+                      <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+                      <input type="button" name="Refresh" value="C" onClick="window.location.reload()">
+                    </div>
+                    
+                    <div class="row">
+                    <input type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+                      <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+                      <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+                    </div>
+                    
+                    <div class="row">
+                    <input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+                      <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+                      <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+                    </div>
+                    
+                    <div class="row">
+                    <input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+                    <input type="reset" class="arrow" value="Clear">
+                    </div>
+                  </div>
+          </form>
+        <div style="padding-left: 200px;"><button type="submit" class="btn mb-3 btn-block\" onclick="main()">Calculate</button></div>
+        <p id="output" class="text-center"></p>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
