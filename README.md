@@ -1,3 +1,2 @@
-# UID
-# RITTIN MITHRA C
-# CH.EN.U4CYS21067
+# Web Development Basics
+Learnt technologies such as HTML5, CSS, Javascript
